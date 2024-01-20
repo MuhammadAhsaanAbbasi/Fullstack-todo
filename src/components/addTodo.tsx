@@ -31,7 +31,7 @@ const AddTodo = () => {
                         action: {
                             label: "X",
                             onClick: () => console.log("X"),
-                        },
+                        }
                     })
                     startTransition(() => {
                         router.refresh()
