@@ -7,7 +7,7 @@ import { toast } from "sonner"
 
 const getData = async () => {
     try {
-        const data = await fetch("http://localhost:3000/api/todo", {
+        const data = await fetch("https://abbasi-fullstack-todo.vercel.app/api/todo", {
             method: "GET",
             cache: "no-store",
             headers: {
