@@ -49,7 +49,7 @@ const AddTodo = () => {
             <Input
             value={todo.task}
                 onChange={(e) => setTodo({ task: e.target.value })}
-                className='rounded-full py-3 px-5 border focus:outline-secondary' type="text" />
+                className='rounded-full py-3 px-5 border focus:outline-secondary text-xl font-medium' type="text" />
             <button
                 type='button'
                 disabled={isMutation}

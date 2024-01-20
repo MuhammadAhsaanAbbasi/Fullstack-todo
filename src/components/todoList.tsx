@@ -7,7 +7,7 @@ import { toast } from "sonner"
 
 const getData = async () => {
     try {
-        const data = await fetch("https://abbasi-fullstack-todo.vercel.app/api/todo", {
+        const data = await fetch("http://localhost:3000/api/todo", {
             method: "GET",
             cache: "no-store",
             headers: {
@@ -62,7 +62,7 @@ const TodoList = () => {
         setisFetched(false)
     }
     return (
-        <div className='max-h-96 overflow-auto w-full space-y-5 absolute top-10 px-4 right-0'>
+        <div className='max-h-96 overflow-auto w-full space-y-5 absolute top-10 px-4 right-0 scrollbar scrollbar-thumb-[rgb(255,81,47)] scrollbar-w-2 scrollbar-track-rounded-md scrollbar-thumb-rounded-md'>
             {resData?.data.map((item) => (
                 <div key={item.id} className='bg-white/65 text-black w-full p-6 flex items-center justify-between gap-5 rounded-md'>
                     <div className='flex items-center gap-x-2'>
